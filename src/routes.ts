@@ -1,11 +1,9 @@
 import { Router } from 'express';
 
-import DefaultRouter from './domain/default.route';
-import ProductRouter from './domain/product/product.routes';
+import DemonRouter from './routes/demons'
 
 const Routes = Router();
 
-Routes.use('/', DefaultRouter);
-Routes.use('/product', ProductRouter);
+Routes.use('/api/demons', DemonRouter);
 
 export default Routes;

@@ -1,8 +1,8 @@
 import 'dotenv/config';
 
 import application from './application';
-import { PORT } from './shared/constants/app.constants';
 
+const PORT = 3001;
  
 ((): void => {
   application.listen(PORT, (): boolean =>
