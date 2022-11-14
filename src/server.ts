@@ -2,7 +2,7 @@ import 'dotenv/config';
 
 import application from './application';
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
  
 ((): void => {
   application.listen(PORT, (): boolean =>
