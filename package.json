@@ -4,6 +4,7 @@
   "main": "src/server.ts",
   "license": "MIT",
   "scripts": {
+    "start": "node dist/server.js",
     "prebuild": "rimraf dist",
     "build": "sucrase ./src -d ./dist --transforms typescript,imports",
     "pre-prod": "rimraf dist && sucrase ./src -d ./dist --transforms typescript,imports",
